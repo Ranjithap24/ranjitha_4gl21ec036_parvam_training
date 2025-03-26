@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        // syntaxfor(initialization; condition; increment/decreament)
+        for(var i=0; i<num; i++){
+            console.log("javascript");
+        }
+        //print first 10 number
+        for(var i=0; i<num; i++){
+            console.log(`${i}`);
+        }
+        //print first 10  natural number
+        for(var i=1; i<=num; i++){
+            console.log(`${i}`);
+        }
+        // print first 10 multiples of 2
+        for(var i=1;  i<=num; i++){
+            console.log(`2 x ${i} = ${2*i}`);
+        }
+        // print first 10 odd numbers
+        var limit = 20;
+        for(var i=1;  i<=limit; i++){
+            if(i%2 !=0){
+            console.log(` ${i} `);
+            }
+        }
+        // print 1to 10 tables
+        for(var i=1;  i<=num; i++){
+            for(var j=1; j<=num; j++){
+            console.log(` ${i}x ${j} = ${i*j}`);
+            }
+        }
+        var i = 0;
+        while(i<=num){
+            console.log(`${num}`);
+            i+=1;
+        }
+        //print first 10 even numbers using while loop
+        var i =1, num = 20;
+        while(i<=num){
+            if(i % 2 == 0){
+            console.log(`${i}`);
+            }
+          
+            i++;
+        }
+        //print first 10 odd numbers using while loop
+        var i =1, num = 20;
+        while(i<=num){
+            if(i%2 !== 0){
+            console.log(`${i}`);
+            }
+            i++;
+        }
+        //print sum of first 10 natural numbers
+        var sum = 0; num = 1; limit =10;
+        while(num <= limit){
+            sum +=num;
+            num ++;
+        }
+        console.log(` the sum of first 10 numbers is: ${sum}`);
+
+        //reversing  a number using while loop 
+        var num = 54321, reverse =0, digit = 0;
+        console.log(`Original number: ${num}`);
+        while(num > 0){
+            digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = Math.floor(num / 10);
+        }
+        console.log(`Reversed number: ${reverse}`);
+        
+
+    </script>
+</body>
+</html>

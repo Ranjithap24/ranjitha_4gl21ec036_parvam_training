@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 5;
+        let pattern = "";    //pattern string
+           if (num > 1) {      //no star pattern for 0 or negative numbers.
+           for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+           for (let j = 1; j <= i; j++) {      //second 'for loop' to print star
+               pattern +=  "* ";    //adding * to pattern string
+        }
+             pattern +="\n";    //new line after row completion
+        }
+        // console.log(pattern);   //printing star to console
+      
+        }
+        else {
+        pattern = "Number must be greater than 1 to print star pattern.";
+        console.log("-----------")
+        }
+        // step:1 let 5  < 1-T
+        //        i =1, i <= 5 -T
+        //        j= 1  2<=1 -F
+        //        1
+        // step:1 let 5  < 1-T
+        //        i =2, i <= 5 -T
+        //        j= 1  2<=2 -T
+        //        1
+        //        2
+        // step:1 let 5  < 1-T
+        //        i =2, i <= 5 -T
+        //        j= 2   2<=2 -T
+        //        1
+        //        2 2
+        // step:1 let 5  < 1-T
+        //        i =3, i <= 5 -T
+        //        j= 1   1<=3 -T
+        //        1
+        //        2 2
+        //        3
+        // step:1 let 5  < 1-T
+        //        i =3, i <= 5 -T
+        //        j= 2   2<=3 -T
+        //        1
+        //        2 2
+        //        3 3
+        // step:1 let 5  < 1-T
+        //        i =3, i <= 5 -T
+        //        j= 3   3<=3 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        j=4 4 <= 3 -F
+        // step:1 let 5  < 1-T
+        //        i =4, i <= 5 -T
+        //        j= 1   1<=4 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4
+        // step:1 let 5  < 1-T
+        //        i =4, i <= 5 -T
+        //        j= 2   2<=4 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4
+        // step:1 let 5  < 1-T
+        //        i =4, i <= 5 -T
+        //        j= 3   3<=4 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4
+        // step:1 let 5  < 1-T
+        //        i =4, i <= 5 -T
+        //        j= 4   4<=4 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4 4
+        //        j=5 5 <= 4 -F
+        // step:1 let 5  < 1-T
+        //        i =5, i <= 5 -T
+        //        j= 1   1<=5 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4 4
+        //        5
+        // step:1 let 5  < 1-T
+        //        i =5, i <= 5 -T
+        //        j= 2   2<=5 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4 4
+        //        5 5
+        // step:1 let 5  < 1-T
+        //        i =5, i <= 5 -T
+        //        j= 3   3<=5 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4 4
+        //        5 5 5
+        // step:1 let 5  < 1-T
+        //        i =5, i <= 5 -T
+        //        j=4  4<=5 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4 4
+        //        5 5 5
+        // step:1 let 5  < 1-T
+        //        i =5, i <= 5 -T
+        //        j= 5   5<=5 -T
+        //        1
+        //        2 2
+        //        3 3 3
+        //        4 4 4 4
+        //        5 5 5 5 5 
+        //        j=6 6 <= 5 -F
+         
+
+        // sum of the given number
+        var number = 12345, sum = 0;
+        while(number > 0){
+            sum = sum + number % 10;
+            number = Math.floor(number /10);
+        
+        }
+        console.log(`sum of individual digit is: ${sum}`);
+
+        var Number =5,  fact =1, i = 1;
+        while(i <= Number){
+            fact = fact * i;
+             i++;
+            console.log(`Factorial of ${Number}: ${fact}`)
+        }
+        // do-while loop
+        var limit = 0, i = 1;
+        do{
+               console.log(`${i}`);
+            
+            
+        }while(limit > 0);
+
+        var  i =1;
+        console.log(`Printing 10 number:`);
+        do{
+            console.log(`${i}`);
+            i++;
+        } while(i <=10);
+
+</script>
+    <script>
+        var Num = 10, second = 20;
+        console.log('the value of \'Num\' is ' + Num + ". the second Value is" + second);
+        console.log(`the value of 'Num' is ${Num}. the "second" value is ${second}.`);
+        // if use single quot or dobble quot in same stetance its error if use both in stetance use esc to avoid error
+        
+       if (num > 1) {      //no star pattern for 0 or negative numbers
+         for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= i; j++) {      //second 'for loop' to print star and space between them
+            if (j==1 || j==i || i==num) {   //condition to make it hollow
+                pattern += "* ";
+            }
+            else{
+                pattern += "  ";
+            }
+        }
+        pattern += "\n";    //new line after row completion
+    }
+    console.log(pattern);   //printing star to console
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern.";
+}
+
+    if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <=num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= (num-i); j++) {    //second 'for loop' to add 'spaces' before pattern
+            pattern += "  ";
+        }
+
+        for (let k = 1; k <= i; k++) {      //third 'for loop' to add * to pattern string
+            if (k==1 || k==i || i==num) {   //third loop condition to make pattern hollow
+                pattern += "* ";    //adding outer * to pattern string
+            }
+            else{
+                pattern += "  ";    //adding spaces between * to pattern string
+            }
+        }
+        pattern += "\n";    //new line after row completion
+    }
+    console.log(pattern);   //printing star to console
+    }
+   else {
+    pattern = "Number must be greater than 1 to print star pattern.";
+    }
+
+  
+    //    <!-- let num = 5;
+    // step:1   i=1 i<=5 1<=5-T
+    //    j=1 1<=1 -T
+    //    * 
+    //    j=2 1<=1-F
+    // step:1   i=2 i<=5 2<=5-T
+    //    j=1 1<=2 -T
+    //    *
+    //    *  *
+    //    j=2 2<=2-T
+    //    j=3 3<=2-F
+    // step:1   i=2 i<=5 3<=5-T
+    //    j=1 1<=3 -T
+    //    *
+    //    *  *
+    //    j=2 2<=3-T
+    //    j=3 3<=3-T
+    //    j=4 4<=3 -F
+    //    *
+    //    *  *
+    //    *     *
+
+    // step:1   i=2 i<=5 4<=5-T
+    //    j=1 1<=4 -T
+    //    *
+    //    *  *
+    //    j=2 2<=4-T -->
+    //    <!-- j=3 3<=4-T
+    //    j=4 4<=4 -T
+    //    *
+    //    *  *
+    //    *     *
+    //    *       *
+    //    j=5 5<=4 -T
+    // step:1   i=2 i<=5 4<=5-T
+    //    j=1 1<=5 -T
+    //    *
+    //    *  *
+    //    j=2 2<=5-T
+    //    j=3 3<=5-T
+    //    j=4 4<=5 -T
+    //    *
+    //    *  *
+    //    *     *
+    //    *       *
+    //    j=5 5<=5 -T
+    //    j=6 6<=5 -F
+    //    *
+    //    * *
+    //    *   *
+    //    *      *
+    //    *         * -->
+    
+     
+    
+    if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 0; j <= (num-i); j++) {    //second 'for loop' for opposite pattern; see loop condition
+            pattern += "* ";
+        }
+        pattern += "\n";    //new line after row completion
+    }
+    console.log(pattern);   //printing star to console
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern.";
+}
+   </script>
+
+
+     <!-- let num= 5;
+     i=1 i<=5;
+     step1:  i =1 
+      j=0 j<=(num-1): 0<= 4 -T 
+      *   
+      j=1 j<=(num-1): 1<= 4 -T 
+    
+      *  *  
+      j=2 j<=(num-1): 2<= 4 -T 
+    
+      *  *  *
+      j=3 j<=(num-1): 3<= 4 -T 
+    
+      *  *  * *
+      j=4 j<=(num-1): 4<= 4 -T 
+    
+      *  *  * * *
+      j=5 j<=(num-1): 5<= 4 -F
+    
+      *  *  * * *
+     step2:  i =2
+      j=0 j<=(num-1): 0<= 3 -T 
+      *  *  *  *  *
+      *
+
+      j=1 j<=(num-1): 1<= 3 -T 
+    
+      *  * * * *
+      *  * 
+      j=2 j<=(num-1): 2<= 3 -T 
+    
+      *  *  * * *
+      *  *  *
+      j=3 j<=(num-1): 3<= 3 -T 
+    
+      *  *  * * *
+      *  *  * *
+      j=4 j<=(num-1): 4<= 3 -F
+     step3:  i =3
+      j=0 j<=(num-1): 0<= 2 -T 
+      *  *  *  *  *
+      *  *  *  *
+      *
+
+      j=1 j<=(num-1): 1<= 2 -T 
+    
+      *  * * * *
+      *  * * *
+      *  *
+      j=2 j<=(num-1): 2<= 2 -T 
+    
+      *  *  * * *
+      *  *  * *
+      *  *  *
+      j=3 j<=(num-1): 3<= 2 -F 
+    
+      *  *  *  *  *
+      *  *  *  *
+      *  *  *
+     step4:  i =4
+      j=0 j<=(num-1): 0<= 1 -T 
+      *  *  *  *  *
+      *  *  *  *
+      *  *  *
+      *
+
+      j=1 j<=(num-1): 1<= 1 -T 
+    
+      *  * * * *
+      *  * * *
+      *  * *
+      *  *
+      j=2 j<=(num-1): 2<= 1 -F 
+    
+      *  *  *  *  *
+      *  *  *  *
+      *  *  *
+      *  *
+      step5: i=5
+      j=0 j<=(num-1): 0<=0 -T 
+    
+      *  *  *  *  *
+      *  *  *  *
+      *  *  *
+      *  * 
+      *
+      step6: i=6 -F -->
+      
+</body>
+</html>

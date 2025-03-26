@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <h1 id="heading">Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ab.</p> -->
+    <!-- <script>
+        const heading = document.getElementById("heading");
+        heading.innerHTML = "DOM Heading";
+        console.log(heading);
+        //we can access complete HTML document
+        const doc = document;
+        console.log(doc);
+
+        //we can access 
+        const body = document.getElementsByTagName("body");
+        console.log(body);
+    </script> -->
+    <script>
+        const root = document.getElementById("root" );
+        const heading = document.createElement("h1");
+        const para = document.createElement("p");
+
+        
+        document.title = "DOM Document"
+        // DOM i s nothing but Document object model
+
+
+
+        heading.innerHTML  = "Hello World!";
+        heading.style.color   = "red";
+        heading.style.background   = "yellow";
+        heading.style.textAlign  = "center";
+        para.innerHTML = "This is a paragraph";
+
+        root.append(heading);
+        root.append(para);
+
+        console.log(root);
+    </script>
+</body>
+</html>

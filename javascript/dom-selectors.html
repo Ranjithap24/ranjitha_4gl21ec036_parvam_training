@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>This is a heading!</h1>
+     <h1>This is a one more heading!</h1>
+    <p>this is a paragraph</p>
+    <h2 class="heading-2">this is a another heading</h2>
+    <h2 class="heading-2">this is a third heading</h2>
+    <p class="heading-2">this is a first para</p>
+    <p class="heading-2">this is a second para</p>
+    <p id="imp">this is important text</p>
+    <script>
+        const important = document.getElementById("imp");
+        console.log(important);
+        
+        important.innerHTML = "this is very importent!";
+        // innerHTMLor textContent to use 
+        // Selector refernce using class name
+        const heading2 = document.getElementsByClassName("heading-2");
+        console.log(heading2);
+     
+        heading2[3].innerHTML = "This is second heading";
+        
+        // selector using tagname 
+        const heading = document.getElementsByTagName("h1");
+        console.log(heading);
+        heading[1].style.color = "crimson";
+        heading[0].style.color = "crimson";
+
+        //selector reference using querySelector
+        const secondHeading = document.querySelector(".heading-2");
+        console.log(secondHeading);
+        const firstHeading =  document.querySelector("h1");
+        console.log(firstHeading);
+
+        secondHeading.style.background = "aqua";
+        firstHeading.style.fontSize = "100px";
+        firstHeading.style.background = "skyblue";
+
+        const allHeading = document.querySelectorAll("h1");
+        console.log(allHeading);
+
+        allHeading[1].style.background = "pink";
+
+        const allClasses = document.querySelectorAll(".heading-2");
+        console.log(allClasses);
+
+        allClasses[1] .style.padding = "50px";
+        allClasses[2] .style.border = "2px solid black";
+
+        // to apply any css properties , just change it from hypens to camel case 
+        //ex: background- color => backgroundColor
+        // ex: text- align => textAlign
+        //ex: padding-right => paddingRight
+    </script>
+    </body>
+</html>

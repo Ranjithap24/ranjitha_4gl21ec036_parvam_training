@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        var num = 20102, reverse =0, digit = 0;
+        var isPalindrome = num;
+        console.log(`original number: ${num}`);
+        while(num > 0){
+            digit = num % 10;
+            reverse = reverse * 10 + num % 10;
+            num = Math.floor(num / 10);
+        }
+        console.log(`reversed number: ${reverse}`);
+    
+        if(isPalindrome === reverse){
+            console.log(`${isPalindrome}is a Palindrome Number. Because ${isPalindrome} is equal to ${reverse}`);
+        } else{
+            console.log(`${isPalindrome} is not a Palindrome Number. because ${isPalindrome} is not equal to ${reverse}`);
+        }
+        </script>
+        </body>

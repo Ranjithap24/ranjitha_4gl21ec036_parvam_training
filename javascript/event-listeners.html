@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">This is heading</h1>
+    <!-- this is a function call -->
+    <p  id= "para" onclick="changeText()">This is a paragraph</p>
+    <input type="text" id="field" value="Field Value">
+    <p id="print-text"></p>
+    <script>
+       const heading = document.getElementById("heading");
+
+        heading.addEventListener("click", function(){
+         heading.innerHTML= "Heading changed because you've clicked";
+            });
+        heading.addEventListener("dblclick", function(){
+        heading.innerHTML= " Main Heading  because you've clicked";
+            });
+        // this is function declaration   function is key words
+        function changeText(){
+            //this is a function definition
+            const para = document.getElementById("para");
+
+            para.innerHTML="this para war changed by DOM usingfunction";
+        }
+            const field = document.getElementById("field");
+
+            field.addEventListener("keydown", function (event) {
+                const printText = document.getElementById("print-text");
+                printText.innerText = `You've clicked: ${event.key}`;
+            });
+            
+        
+        // *onmousemove
+        // *onmouseout
+        // *onkeypress
+        // *onscroll
+        // *onmouseover
+        // *onclick
+        // *ondblclick
+    </script>
+</body>
+</html>
