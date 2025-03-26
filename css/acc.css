@@ -1,0 +1,137 @@
+nav{
+    
+    border-radius: none;
+    font-size: 10px;
+    color: black;
+
+}
+.details{
+    margin-top: 1px;
+    padding: 10px;
+    position: sticky;
+    text-align: center;
+    border: 2px ridge black;
+    top: 1px
+}
+.logo{
+   width: 100px;
+    border-radius: 10px;
+}
+.menu-items{
+    color:black;
+}
+.menu-bar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:center;
+    margin: 0;
+    border: 1px solid black;
+    text-wrap: wrap;
+    color: rgb(230, 100, 14);
+}
+.menu-items-logo{
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-end-start-radius: 10px; 
+    border-end-end-radius: 10px;
+    width: 10px;
+    color: black;
+}
+a:hover{
+    scale: 2,2;
+    text-decoration:2px;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 40px;
+    border:2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-end-start-radius: 10px; 
+    border-end-end-radius: 10px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 2;
+}
+img:hover{
+    transform: scale(2,2);
+    transition: 3.transform;
+    justify-content: space-between;
+}
+a{
+    color: aliceblue;
+    font-weight: bold;
+}
+.para-1{
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    line-height: 1;  
+}
+.para-2{
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+} 
+.img-parent{
+    display: flex;
+    
+
+}
+.img-child-0{
+    padding: 10px;
+    border: 2px solid black;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img-child-1{
+    margin-left: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.img-child-2{
+    margin-left: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img-parent-2{
+    display: flex;
+    margin-top:100px ;
+}
+.img-child-3{
+    padding: 10px;
+    border: 2px solid black;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img-child-4{
+    margin-left: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold
+}
+.img-parent-3{
+    display: flex;
+    margin-top:50px ;
+}
+.btc{
+    font-size: 50px;
+    color: crimson;
+    
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        div p{
+            color: red;
+            background-color: antiquewhite;
+        }
+        .container span{
+            font-weight: bold;
+        }
+        .parent > p {
+            color: blue;
+        }
+        .lists > ul {
+           list-style-type: square;
+        }
+        h1 + p{
+            color: green;
+        }
+        h2 + ul{
+            border: 1px solid black;
+        }
+        .list-item + li{
+            font-size: 30px;
+            color: brown;
+        }
+        .heading-1 ~p{
+            color: purple;
+        }
+        h2 + ol {
+           background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- descendand combinator -->
+     <div>
+        <p>this paragraph will be red.</p>
+     </div>
+     <p>this paragraph will not be red.</p>
+    <div class="container">
+        <span>this span will be bold.</span>
+        <div>
+            <span>this is a span within div block</span>
+        </div>
+    </div>
+    <span> this span will not be bold.</span>
+      <!-- child combinator   -->
+    <div class="parent">
+        <p>this paragraph will be blue.</p>
+    </div>
+    <div>
+    <p>this paragraph will not be blue.</p>
+    </div>
+</div>
+<div class="lists">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <div>
+        <ul>
+            <li>Item A</li>
+        </ul>
+    </div>
+</div>
+<!-- Adjacent sibiling combinator -->
+    <h1>Heading 1</h1>
+    <p>this paragraph will be green</p>
+    <p>this paragraph will not be green</p>
+
+    <h2>Subheading</h2>
+    <ul>
+        <li class="list-item">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 2</li>
+    </ul>
+    <!-- General sibiling combinator -->
+     <h1 class="heading-1">Heading</h1>
+     <p>this paragraph will be purple</p>
+     <p>this paragraph will also be purple</p>
+     <h2>Subheading</h2>
+
+
+     <h2>Subheading</h2>
+     <ol>
+        <li>this list item will have a yellow background.</li>
+        <li>this list item will  also have a yellow background.</li>
+        <li>this list item will  also have a yellow background.</li>
+        <li>this list item will  also have a yellow background.</li>
+     </ol>
+
+
+        
+    
+</body>
+</html>

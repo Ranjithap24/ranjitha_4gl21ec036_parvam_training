@@ -1,0 +1,76 @@
+.parent{
+    border: 1px solid black;
+    background-color: burlywood;
+    background-image:url(../media/music\ logo.jpg) ;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    background-image: url(../media/back.jpeg); 
+    background-size: cover;
+}      
+.child{
+    background-color: crimson;
+    border: 1px solid rgb(9, 43, 176);
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child-2{
+     grid-row-start: 1 ;
+     grid-row-end: 3;
+     grid-column-start: 2;
+     grid-column-end: 3;
+     background-color: aqua;
+}
+.child-3{
+    /* grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5; or */
+    grid-row: 1/5;
+    grid-column: 3/5;
+    background-color: blueviolet;
+}
+.child-4{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6; 
+    background-color: brown;
+}
+.child-5{
+    /* grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3 ; */
+    /* shorthand property */
+    /* syntax:grid-row: start/end */
+    /* one more shorthand property
+    syntax : grid-area:row-start column-start row-end column-end */
+    grid-area: 3 / 1 / 6 / 3;
+    background-color: bisque;
+}
+.child-6{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column: 2/6;
+    background-color: coral;
+}
+.child-7{
+    
+    background-color: navajowhite;
+}
+.child-8{
+    background-color: navy;
+}
+.child-9{
+    background-color: darkgreen;
+}
+.child-10{
+    background-color: gold;
+}
+
+
+

@@ -1,0 +1,85 @@
+nav{
+    background-color: aliceblue;
+    border-radius: none;
+}
+.details{
+    margin-top: 1px;
+    padding: 0px;
+    position: sticky;
+    text-align: center;
+    border: 1px ridge black;
+    top: 1px
+}
+.menu-bar{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:center ;
+    margin: 0;
+}
+img{
+    
+    width: 50px;
+    border-radius: 10px;   
+}
+a{
+    scale: 2;
+    text-decoration:2px;
+    color: rgb(253, 79, 16);
+    font-weight: bold;
+    font-size: 20px;
+    border:2px double black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-end-start-radius: 10px; 
+    border-end-end-radius: 10px;
+}
+.menu-items{
+    /* border: 1px solid black; */
+    padding: 10px;
+    flex-grow: 1;
+    /* flex-shrink: 2; */
+}
+.logo-log{
+    flex-grow: 10;
+    /* flex-shrink: 2; */
+}
+a:hover{
+    color: black;
+    text-decoration:underline;
+    font-size: 10px;
+}
+/* img{
+    width:30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+} */
+ .colleges{
+    table,tr,th,td{
+        border:1px solid rgb(211, 56, 190);
+        
+  }
+ }
+ .img{
+    width: 400px;
+ }
+ form{
+    border: 1px solid black;
+    margin: 50px;
+    width: 500px;
+ }
+ .social-media{
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    right: 20px;
+ }
+
+ .icons:hover{
+    transform: scale(2,2);
+    font-size: 50px;
+ }
