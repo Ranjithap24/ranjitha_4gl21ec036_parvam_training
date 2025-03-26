@@ -1,0 +1,17 @@
+{% extends 'students/base.html' %}
+
+{% block content %}
+   <section>
+    <div class="contact">
+      <form>
+        <label for="student_name"> Student Name :</label>
+        <input class="form-control" type="text" name="student_name" id="student_name"><br><br>
+        <label for="email_id">Email ID :</label> 
+        <input class="form-control" type="email" name="email_id" id="email_id"><br><br>
+        <label for="phone_number">Phone number :</label> 
+        <input class="form-control" type="tel" name="phone_number" id="phone_number"><br><br>
+        <input type="submit"> 
+      </form>  
+    </div>
+   </section>
+{% endblock  %}

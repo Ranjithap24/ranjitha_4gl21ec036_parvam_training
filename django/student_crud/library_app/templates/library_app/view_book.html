@@ -1,0 +1,43 @@
+{% extends 'library_app/menubar.html' %}
+
+{% block content %}
+<h1 class="bg-info text-center">Book Details</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Attribute</th>
+        <th scope="col">Value</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <td>{{ library.name }}</td>
+      </tr>
+      <tr>
+        <th>USN</th>
+        <td>{{ library.uns }}</td>
+      </tr>
+      <tr>
+        <th >Email</th>
+        <td >{{ library.email }}</td>
+      </tr>
+      <tr>
+        <th >Phone number</th>
+        <td >{{ library.phone }}</td>
+      </tr>
+      <tr>
+        <th >Bookname</th>
+        <td >{{ library.bookname }}</td>
+      </tr>
+      <tr>
+        <th >Authors</th>
+        <td >{{ library.authors }}</td>
+      </tr>
+      <tr>
+        <th >Booknumber</th>
+        <td >{{ library.booknumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'library_app/menubar.html' %}
+
+{% block content %}
+<h1>list of Books Information</h1>
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">name</th>
+        <th scope="col">USN</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Bookname</th>
+        <th scope="col">Authors</th>
+        <th scope="col">Booknumber</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {% for library in librarys %}
+      <tr>
+          <td>{{ library.name }}</td>
+          <td>{{ library.uns }}</td>
+          <td>{{ library.email }}</td>
+          <td>{{ library.phone }}</td>
+          <td>{{ library.bookname}}</td>
+          <td>{{ library.authors }}</td>
+          <td>{{ library.booknumber }}</td>
+          <td>
+              <a href="{% url 'view-book' library.pk %}" class="btn btn-info btn-sm">View</a>
+              <a href="{% url 'edit-book' library.pk %}" class="btn btn-warning btn-sm">Edit</a>
+              <a href="{% url 'delete-book' library.pk %}" class="btn btn-danger btn-sm">Delete</a>
+          </td>
+      </tr>
+      {% empty %}
+      <tr>
+          <td colspan="7" class="text-center">No library details found!</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+  </table>
+{% endblock %}
